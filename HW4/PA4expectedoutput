@@ -1,0 +1,36 @@
+1
+(1, 2)
+[1, 2]
+(1, 2)
+2
+(1+2j)
+About to try "P1=Point(1,2);P1":  It should give "(1, 2)": (1, 2)
+About to try "len(P1)":  It should round to "2": 2
+About to try "Pz=Point(P1);Pz":  It should give "(1, 2)": (1, 2)
+About to try "P1['y']":  It should give "2": 2
+About to try "P2=Point((2,1));P2":  It should give "(2, 1)": (2, 1)
+About to try "P3=Point([1,1]);P3":  It should give "(1, 1)": (1, 1)
+About to try "P4=Point(([([2],)],),2);P4":  It should give "(2, 2)": (2, 2)
+About to try "P5=Point(3+4j);P5":  It should give "(3.0, 4.0)": (3.0, 4.0)
+About to try "P6=P1+P2;P6":  It should give "(3, 3)": [3, 3]
+About to try "P7=P1-P2;P7":  It should give "(-1, 1)": [-1, 1]
+About to try "P7 += P6;P7":  It should give "(2, 4)": [2, 4]
+About to try "P8 = P6*4;P8":  It should give "(12, 12)": (12, 12)
+About to try "P8 *= 5;P8":  It should give "(60, 60)": (60, 60)
+About to try "P8/=6;P8":  It should give "(10.0, 10.0)": (10.0, 10.0)
+About to try bad syntax "P9 = (1,2j)": Got the expected error: 
+  Syntax Error:1,2j cannot convert to coordinates.
+
+About to try bad syntax "P9 = (1+1j,2)": Got the expected error: 
+  Syntax Error:(1+1j),2 cannot convert to coordinates.
+
+About to test "P1 == P1":  It should give "True": True
+About to test "P1 == P2":  It should give "False": False
+About to test "P1 <= P2":  It should give "False": False
+About to test individual element accessing:  It should give 0.1 2: 0.1 2
+About to test a bad access: Got expected error: 
+  Value Error:2 is not a valid dimension.
+
+About to test a bad value assignment: Got expected error: 
+  Value Error:No is not a number.
+

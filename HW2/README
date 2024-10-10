@@ -1,0 +1,26 @@
+How to run?
+python3
+>>> from GEdictionary_template2 import *
+>>> translate("eel")
+The English word "eel" (20294) translates to "aal" (3).
+>>> translate("aal")
+"Aal" is not in the English dictionary.
+>>> 
+>>> translate("aal",ToEnglish=True)
+The German word "aal" (3) translates to "eel" (20294).
+>>> 
+>>> translate("eel",ToEnglish=True)
+"Eel" is not in the German dictionary.
+>>> 
+>>> translate("evening performance")
+The English word "evening performance" (23580, 53752) translates to "abendvorstellung" (121).
+>>> 
+>>> translate("for")
+The English word "for" (27068) translates to "fur" (28480).
+>>> 
+>>> translate("for",ToEnglish=True)
+"For" is not in the German dictionary.
+>>> 
+>>> translate("evening performance",ToEnglish=True)
+"Evening performance" is not in the German dictionary.
+>>>
