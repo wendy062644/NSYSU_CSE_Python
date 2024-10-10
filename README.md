@@ -1,1 +1,1 @@
-# NSYSU_CSE_Python
+# 中山資工-Python 作業
